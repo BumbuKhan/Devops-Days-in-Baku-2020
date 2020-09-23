@@ -36,6 +36,7 @@ workflows:
     build:
         jobs:
             - build_project:
+                context: MY_CONTEXT
             - deploy_project:
                 requires:
                     - build_project
