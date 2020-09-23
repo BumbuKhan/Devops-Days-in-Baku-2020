@@ -10,12 +10,12 @@ jobs:
             - image: node:10.15.3
         steps:
             - checkout
-            - run:
-                name: Installing dependencies
-                command: yarn
-            - run:
-                name: Building project
-                command: yarn build
+            # - run:
+            #     name: Installing dependencies
+            #     command: yarn
+            # - run:
+            #     name: Building project
+            #     command: yarn build
             - persist_to_workspace:
                 root: .
                 paths:
